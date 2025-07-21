@@ -364,7 +364,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         fetch("validar-cookies-2.0.php").then(res => res.json()).then(data => {
             if (data.status === "ok") {
                 document.cookie = "real_user=1; path=/";
-                window.location.href = "/rastrear/site/";
+                window.location.href = "/Rastrear";
             } else {
                 // simplesmente não faz nada, deixa o cara na página white
                 console.log("Não passou na validação, segue na white.");
